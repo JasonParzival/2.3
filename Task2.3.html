@@ -11,28 +11,37 @@
   </head>
   <body>
     <div class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Название</th>
-            <th>Рейтинг</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Унесённые призраками</td>
-            <td>8.4</td>
-          </tr>
-          <tr>
-            <td>Малхолланд Драйв</td>
-            <td>7.6</td>
-          </tr>
-          <tr>
-            <td>Мертвец</td>
-            <td>7.8</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="row">
+        <div class="col-md-8">
+          <table class="table table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th>Название</th>
+                <th>Рейтинг</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-title="Унесённые призраками" data-rating="8.4" data-year="2001" data-director="Хаяо Миядзаки"  data-image="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/64becb5d-e7b9-4a56-8c71-5008294a854a/300x450" onclick="onRowClick(this)">
+                <td>Унесённые призраками</td>
+                <td>8.4</td>
+              </tr>
+              <tr data-title="Малхолланд Драйв" data-rating="7.6" data-year="2002" data-director="Дэвид Линч" data-image="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/477bd555-16ee-47aa-be90-6a252c189414/300x450" onclick="onRowClick(this)">
+                <td>Малхолланд Драйв</td>
+                <td>7.6</td>
+              </tr>
+              <tr data-title="Мертвец" data-rating="7.8" data-year="1995" data-director="Джим Джармуш" data-image="	https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/707e78dc-43a0-4309-88f0-dee4ce7a4e57/300x450" onclick="onRowClick(this)">
+                <td>Мертвец</td>
+                <td>7.8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <div class="shadow p-2 text-center">
+            <span id="title">Название</span>
+          </div>
+        </div>
+      </div>
     </div>
     
     <script src="./main.js"></script>
